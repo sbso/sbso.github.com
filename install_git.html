@@ -43,6 +43,17 @@
 <h2 id="toc_0.1">1. <code>rpm -qa | grep -i git</code></h2>
 <p>
 	<code>grep</code>命令的<code>-i</code>参数表示不区分大小写，这样的话无论是<code>git/GIT/Git...</code>都逃不过<code>grep</code>的法眼了。如果没有找到git的核心包，而只是与其相关的别的包，则立刻安装一个吧。<br />
+</p>
+	
+<p>
+	但是本人喜欢源码安装的方式，虽然简单还是记录一下：<br />
+	<a href="http://www.kernel.org/pub/software/scm/git/">downlaod url</a> <br />
+	选择要安装的版本：我选择<code>git-1.7.4.4.tar.gz</code>.<br />
+	解压后进入目录<code>make &amp;&amp; make install</code>. <br />
+	最近查看一下版本号：<code>git --version</code>.<br />
+</p>
+	
+<p>
 	当然由于本人家里的机器使用了<code>arch</code>，所以得用命令<code>pacman -Ss git</code> 来查看<code>git</code>安装的包。<br />
 </p>
 <h2 id="toc_0.2">2. install</h2>

@@ -25,13 +25,38 @@
 			<div class="content">
 				<article>
 				
-<h1>fedora</h1>
+<h1>vim删除^M字符</h1>
+<div class="toc">
+<ul>
+<li><a href="#toc_0.0.1">方法一：</a>
+<li><a href="#toc_0.0.2">方法二：</a>
+</ul>
+</ul>
+</ul>
+</div>
 
-<ol>
-<li>
-<a href="linux_vsftpd_conf.html">linux 下ftp配置文件详解</a>
+<p>
+当我在win下面编辑了程序之后，有时候会看到在行尾有<code>^M</code> 可恶的字符。<br />
+虽然，它并不影响程序<br />
+但是看起来不爽，那么如何删除呢？
+</p>
 
-</ol>
+<h3 id="toc_0.0.1">方法一：</h3>
+
+<pre>
+:%s/^M$//g
+</pre>
+
+<p>
+<code>^M</code> = <code>Ctrl+v</code> then <code>Ctrl+m</code>
+</p>
+
+<hr />
+<h3 id="toc_0.0.2">方法二：</h3>
+<pre>
+:%s/\r//g
+
+</pre>
 
 				</article>
 			</div>
